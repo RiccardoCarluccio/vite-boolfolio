@@ -28,7 +28,10 @@ export default {
 </script>
 
 <template>
-  
+  <div v-for="project in projects" :key="project.id">
+    <div>{{ project.title }}</div>
+    <div>{{ project.description }}</div>
+  </div>
 </template>
 
 <style scoped>
